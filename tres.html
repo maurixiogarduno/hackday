@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Templo Mayor</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+  <script>
+    var geometry = new THREE.BoxBufferGeometry( 1, 1, 1 );
+var materials = [
+    new THREE.MeshDepthMaterial(),
+    new THREE.MeshNormalMaterial(),
+    new THREE.MeshBasicMaterial( { wireframe: true } ),
+    new THREE.MeshLambertMaterial( { color: 0xff0000 } ),
+    new THREE.MeshPhongMaterial( { color: 0x0000ff } ),
+    new THREE.MeshStandardMaterial( { color: 0x00ff00 } ),
+];
+var mesh = new THREE.Mesh( geometry, materials );
+  </script>
+  
+</head>
+<body>
+        <a-scene>
+                
+            <a-assets>
+            <a-asset-item id="templito" src="objects/estesi/escultura.dae" ></a-asset-item>
+            </a-assets>
+            <a-sky color="#000000"></a-sky>
+            <a-entity position="-100 -100 -100" rotation="0 0 0" collada-model="#templito"></a-entity>
+        </a-scene>
+</body>
+</html>

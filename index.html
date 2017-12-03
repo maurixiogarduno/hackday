@@ -27,13 +27,17 @@ var mesh = new THREE.Mesh( geometry, materials );
 <body>
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Logo</a>
+      
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
+        <li><a href="uno.html">Roca</a></li>
+        <li><a href="dos.html">Pirámide</a></li>
+        <li><a href="tres.html">Escultura</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
+        <li><a href="uno.html">Roca</a></li>
+        <li><a href="dos.html">Pirámide</a></li>
+        <li><a href="tres.html">Escultura</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
@@ -43,18 +47,15 @@ var mesh = new THREE.Mesh( geometry, materials );
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-        <h1 class="header center teal-text text-lighten-2">Parallax Template</h1>
+        <h1 class="header center teal-text text-lighten-2">Templo Mayor</h1>
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-        </div>
-        <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+          <h5 class="header col s12 light textbanner">El complejo más importante de Tenochtitlan</h5>
         </div>
         <br><br>
 
       </div>
     </div>
-    <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
+    <div class="parallax"><img src="images/background3.jpg" alt="Unsplashed background img 1"></div>
   </div>
 
 
@@ -63,8 +64,8 @@ var mesh = new THREE.Mesh( geometry, materials );
 
       <!--   Icon Section   -->
       <div class="row">
-        <div class="col s12 m4">
-          <div id="myEmbeddedScene"  style="width:350px; height:350px;">
+        <div class="col s12 m12">
+          <div id="myEmbeddedScene"  style="width:100%; height:350px;">
               <a-scene embedded>
                 
                   <a-assets>
@@ -73,14 +74,6 @@ var mesh = new THREE.Mesh( geometry, materials );
                   <a-sky color="#000000"></a-sky>
                   <a-entity position="-100 -100 -100" rotation="0 0 0" collada-model="#templito"></a-entity>
                 </a-scene>
-            <!-- <a-scene embedded>
-              <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-              <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-              <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-              <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-              <a-sky color="#ECECEC"></a-sky>
-            </a-scene> -->
-            
           </div>
         </div>
       </div>
@@ -92,11 +85,11 @@ var mesh = new THREE.Mesh( geometry, materials );
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <h5 class="header col s12 light">Ipan In Xictli Mextli<br>En el Ombligo de la Luna</h5>
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img src="images/background2.jpg" alt="Unsplashed background img 2"></div>
   </div>
 
   <div class="container">
@@ -104,9 +97,25 @@ var mesh = new THREE.Mesh( geometry, materials );
 
       <div class="row">
         <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contact Us</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+          <h5>Zona Arqueológica del Templo Mayor.</h5>
+          <p class="left-align light">Para los mexicas, el Templo Mayor ocupaba el centro del universo y por esa
+              razón no podía ser cambiado de lugar. A ello se debe que cada vez que querían
+              agrandarlo, se construía un nuevo edificio sobre el anterior conservando las
+              mismas características fundamentales, es decir, dos capillas en la cúspide y
+              escalinata doble en la fachada principal. De esta manera se procedió, al menos
+              en siete ocasiones.
+              <img src="images/code.png" class="right">
+            </p>
+              <p class="left-align light">La zona arqueológica del Templo Mayor comprende 1.2 hectáreas,
+                  predominando sin duda el edificio religioso más importante de Tenochtitlan,
+                  dedicado a Huitzilopochtli, dios solar de la guerra, y a Tláloc, el dios de la lluvia.
+                  Sin embargo, en sus inmediaciones se rescataron otras construcciones
+                  relevantes: hacia el norte tres adoratorios de menor tamaño, entre ellos un Altar
+                  Tzompantli y uno de dos templos rojos dedicados al dios Xochipilli, así como la Casa de las Águilas, de mayores proporciones; hacia el poniente, y muy cerca
+                  de donde se encuentra el museo, pueden apreciarse los vestigios parciales de la
+                  gran plataforma que limitaba al recinto sagrado de México-Tenochtitlan por sus cuatro costados. Finalmente, hacia el sur se halla el segundo de los templos
+                  rojos consagrados al dios Xochipilli, los cuales por cierto imitan el estilo
+                  arquitectónico teotihuacano.</p>
         </div>
       </div>
 
@@ -118,45 +127,21 @@ var mesh = new THREE.Mesh( geometry, materials );
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <h5 class="header col s12 light textbanner">La zona arqueológica del Templo Mayor comprende 1.2 hectáreas</h5>
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
+    <div class="parallax"><img src="images/panoramica.jpg" alt="Unsplashed background img 3"></div>
   </div>
 
   <footer class="page-footer teal">
     <div class="container">
       <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
       </div>
     </div>
     <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      <div class="container " style="text-align:center">
+      Made in México Tenochtitlan
       </div>
     </div>
   </footer>
